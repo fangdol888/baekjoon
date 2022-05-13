@@ -2,7 +2,6 @@
 #define SIZE 1025
 using namespace std;
 int n,m ;
-int map[SIZE][SIZE];
 int summap[SIZE][SIZE];
 
 int x[2],y[2];
@@ -15,8 +14,9 @@ int main(){
     cin >>n >> m;
     for(int i=1;i<=n;i++){
         for(int j=1;j<=n;j++){
-            cin >> map[i][j];
-            summap[i][j] = summap[i][j-1] +summap[i-1][j] - summap[i-1][j-1] + map[i][j];
+            int tmp;
+            cin >> tmp;
+            summap[i][j] = summap[i][j-1] +summap[i-1][j] - summap[i-1][j-1] +tmp;
         }
     }
     for(int i=0;i<m;i++){
