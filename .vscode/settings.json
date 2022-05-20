@@ -7,6 +7,7 @@
         "iostream": "cpp",
         "utility": "cpp",
         "queue": "cpp",
-        "xlocale": "cpp"
+        "xlocale": "cpp",
+        "stack": "cpp"
     }
 }
