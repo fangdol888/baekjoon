@@ -9,11 +9,6 @@ vector<pii> jew;
 priority_queue<int> pq; //보석
 vector<int> inven;
 
-bool compare(pii a, pii b){ // 가치 있는 순서대로
-    if(a.second == b.second) return a.first < b.first;
-    return a.second > b.second;
-}
-
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(0);
