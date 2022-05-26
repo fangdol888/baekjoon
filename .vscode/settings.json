@@ -8,6 +8,7 @@
         "utility": "cpp",
         "queue": "cpp",
         "xlocale": "cpp",
-        "stack": "cpp"
+        "stack": "cpp",
+        "xiosbase": "cpp"
     }
 }
