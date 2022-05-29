@@ -4,32 +4,36 @@
 using namespace std;
 int n;
 double sum = 0;
-double xx[10001], yy[10001];
-
-double cc(double a1,double a2, double b1, double b2){
-    a1 -= xx[0];
-    a2 -= yy[0];
-    b1 -= xx[0];
-    b2 -= yy[0];
-    sum += (a1*b2 - a2*b1)/2.0;
-    return sum;
+int x1;
+int y1;
+int prex, prey;
+double cc(int a1,int a2, int b1, int b2){
+    a1 -= x1;
+    a2 -= y1;
+    b1 -= x1;
+    b2 -= y1;
+    sum += (a1*b2 - a2*b1)/2;
 }
 int main(){
 
-
     cin >> n;
-
-    for (int i = 0; i < n; i++) {
-        cin >> xx[i] >> yy[i];
+    cin >> x1;
+    cin >> y1;
+    prex = x1;
+    prey = y1;
+    for(int i=1;i<n;i++){ //n-1 번
+        int x,y;
+        cin >> x >> y;
+        cc(prex,prey,x,y);
+        prex=x;
+        prey=y;
     }
 
-    for(int i=1;i<n-1;i++){ 
-        cc(xx[i], yy[i], xx[i+1], yy[i+1]);
-    }
+    if(sum<0) sum = -sum;
 
-    cout.precision(1);
     cout << fixed;
-    cout << abs(sum) << '\n';
+    cout.precision(1);
+    cout << sum << '\n';
 
     return 0;
 }
