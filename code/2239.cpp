@@ -58,6 +58,7 @@ void dfs(int c){
             if(possible(x , y,  k)){
                 map[y][x] = k;
                 dfs(c+1);
+                if(flag) return;
                 map[y][x] = 0;
             }
 
@@ -82,15 +83,7 @@ int main(){
         }
     }
  
-    for(int i=0;i<9;i++){
-        for(int j=0;j<9;j++){
-            if(map[i][j] == 0){
-                dfs(0);
-                if(flag) break;
-            }
-        }
-        if(flag) break;
-    }
+    dfs(0);
 
     return 0;
 }
