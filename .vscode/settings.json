@@ -10,6 +10,7 @@
         "xlocale": "cpp",
         "stack": "cpp",
         "xiosbase": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "tuple": "cpp"
     }
 }
