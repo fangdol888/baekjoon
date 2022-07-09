@@ -9,6 +9,7 @@
         "queue": "cpp",
         "xlocale": "cpp",
         "stack": "cpp",
-        "xiosbase": "cpp"
+        "xiosbase": "cpp",
+        "algorithm": "cpp"
     }
 }
