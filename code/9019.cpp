@@ -37,22 +37,22 @@ void bfs(int a , int b){
             q.push( {s, cur.second +"S" });
         }
         //l
-        if(cur.second[cur.second.size()-1] != 'R'){
-            int l = (cur.first * 10 + (cur.first / 1000)) % 10000;
-            if(!visit[l]){
-                visit[l] = true;
-                q.push( {l, cur.second +"L" });
-            }
+   
+        int l = (cur.first * 10 + (cur.first / 1000)) % 10000;
+        if(!visit[l]){
+            visit[l] = true;
+            q.push( {l, cur.second +"L" });
         }
         
+        
         //r
-         if(cur.second[cur.second.size()-1] != 'L'){
-            int r = (cur.first%10)*1000 + cur.first/10 ;
-            if(!visit[r]){
-                visit[r] = true;
-                q.push({r, cur.second +"R" });
-            }
+       
+        int r = (cur.first%10)*1000 + cur.first/10 ;
+        if(!visit[r]){
+            visit[r] = true;
+            q.push({r, cur.second +"R" });
         }
+        
     }
     
 }

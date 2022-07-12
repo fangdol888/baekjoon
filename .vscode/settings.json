@@ -11,6 +11,7 @@
         "stack": "cpp",
         "xiosbase": "cpp",
         "algorithm": "cpp",
-        "tuple": "cpp"
+        "tuple": "cpp",
+        "map": "cpp"
     }
 }
