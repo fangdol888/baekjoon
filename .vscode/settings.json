@@ -12,6 +12,7 @@
         "xiosbase": "cpp",
         "algorithm": "cpp",
         "tuple": "cpp",
-        "map": "cpp"
+        "map": "cpp",
+        "xutility": "cpp"
     }
 }
